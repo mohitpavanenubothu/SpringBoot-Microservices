@@ -1,1 +1,38 @@
-url
+1. http://localhost:4041/customer/api/customerSave
+		{
+		    "cName":"SATYA",
+		    "cAadhar":915354693654,
+		    "account":[{
+		        "accType":"Saving",
+		        "amount":20000
+		    }
+		    ]
+		}
+		
+2. http://localhost:4041/customer/api/findAll
+[
+    {
+        "id": 1,
+        "cName": "SATYA",
+        "cAadhar": 915354693654,
+        "account": [
+            {
+                "accNo": 1,
+                "accType": "Saving",
+                "amount": 20000.0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "cName": "Mohit",
+        "cAadhar": 915354693654,
+        "account": [
+            {
+                "accNo": 2,
+                "accType": "Saving",
+                "amount": 40000.0
+            }
+        ]
+    }
+]

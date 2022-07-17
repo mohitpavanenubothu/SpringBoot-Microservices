@@ -1,1 +1,74 @@
-Please add API url here
+1. Post Request:  http://localhost:4040/employee/api/employeeSave
+
+Sample Input:
+-------------
+			{
+			    "employeeName":"SATYA",
+			    "mobileNo":[{
+			        "provider":"Airtel",
+			        "type":"prepaid"
+			    },{
+			        "provider":"Jio",
+			        "type":"postpaid"
+			    },
+			    {
+			        "provider":"Hathway",
+			        "type":"Home Broadband"
+			    }
+			    ],
+			    "billingAddress":{
+			        "doorNo":"15-15-206",
+			        "streetName":"Rama Hospital Road",
+			        "layout":"Seethammadhara",
+			        "city":"Vizag",
+			        "pincode":"530016"
+			    },
+			    "shippingAddress":{
+			        "doorNo":"15-15-206",
+			        "streetName":"Road Number 6B",
+			        "layout":"Kondapur",
+			        "city":"Hyd",
+			        "pincode":"500019"
+			    }
+			}
+			
+2. Get Request http://localhost:4040/employee/api/findAll
+			[
+			    {
+			        "id": 1,
+			        "employeeName": "Suvarna",
+			        "mobileNo": [
+			            {
+			                "regno": 3,
+			                "provider": "Jio",
+			                "type": "postpaid"
+			            },
+			            {
+			                "regno": 2,
+			                "provider": "Airtel",
+			                "type": "prepaid"
+			            },
+			            {
+			                "regno": 1,
+			                "provider": "Hathway",
+			                "type": "Home Broadband"
+			            }
+			        ],
+			        "billingAddress": {
+			            "id": 1,
+			            "doorNo": "15-15-206",
+			            "streetName": "Rama Hospital Road",
+			            "layout": "Seethammadhara",
+			            "city": "Vizag",
+			            "pincode": "530016"
+			        },
+			        "shippingAddress": {
+			            "id": 2,
+			            "doorNo": "15-15-206",
+			            "streetName": "Road Number 6B",
+			            "layout": "Kondapur",
+			            "city": "Hyd",
+			            "pincode": "500019"
+			        }
+			    }
+			]
